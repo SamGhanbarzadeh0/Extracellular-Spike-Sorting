@@ -18,9 +18,9 @@ The original work dates to **2019**. The current Python notebook, complete refer
 | Held-out event-level micro-F1, codes 1–2 | **0.9738** | Primary 4σ detector; not overall event performance |
 | Held-out event-level micro-F1, codes 0/1/2 | **0.7131** | Primary 4σ detector; missed events included |
 
-The event-level results use a chronological 70/30 train/test split **within each previously examined simulation**, not an external biological test cohort. The reference matching convention and training-only cluster-to-label relabeling are described in `results/END_TO_END_PROTOCOL.json`. In particular, the 97.38% F1 for codes 1–2 must **not** be reported as an overall three-code performance figure.
+The event-level results use a chronological 70/30 train/test split **within each previously examined simulation**, not an external biological test cohort. The reference matching convention and training-only cluster-to-label relabeling are described in `Results/END_TO_END_PROTOCOL.json`. In particular, the 97.38% F1 for codes 1–2 must **not** be reported as an overall three-code performance figure.
 
-![Nine-method comparison on simulation 3](figures/simulation_3_nine_methods.png)
+![Nine-method comparison on simulation 3](Figures/simulation_3_nine_methods.png)
 
 *Simulation 3 is an important challenging case; its performance is lower for several methods than for the easiest simulations. Results from all five are retained.*
 
@@ -40,12 +40,12 @@ An earlier **scikit-learn 1.8.0** rerun agreed exactly on 43/45 primary ARI rows
 
 ## Files and download locations
 
-- `notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb` — complete analysis notebook with its saved figures and numerical results.
-- `results/` — CSV tables and key machine-readable manifests.
-- `figures/` — eight selected figures. The complete figure gallery and checkpoint files remain in the full ZIP archive.
-- `data/SHA256SUMS.txt` — checksums for the five source MAT files; data are distributed separately from Git history.
-- `docs/VALIDATION_2026-11-22.md` — details of the reference execution, checks, and interpretation.
-- `scripts/verify_release_artifacts.py` — offline integrity checks for the results ZIP and optional raw MAT data archive.
+- `Notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb` — complete analysis notebook with its saved figures and numerical results.
+- `Results/` — CSV tables and key machine-readable manifests.
+- `Figures/` — eight selected figures. The complete figure gallery and checkpoint files remain in the full ZIP archive.
+- `Data/SHA256SUMS.txt` — checksums for the five source MAT files; data are distributed separately from Git history.
+- `Docs/VALIDATION_2026-11-22.md` — details of the reference execution, checks, and interpretation.
+- `Scripts/verify_release_artifacts.py` — offline integrity checks for the results ZIP and optional raw MAT data archive.
 
 **Release assets (publish separately through GitHub Releases):**
 
@@ -60,7 +60,7 @@ An earlier **scikit-learn 1.8.0** rerun agreed exactly on 43/45 primary ARI rows
 2. Place `simulation_1.mat` through `simulation_5.mat` in `MyDrive/Computational Neuroscience/`, or edit `DATA_DIR_OVERRIDE` near the top of the notebook.
 3. Leave `DATASETS=(1,2,3,4,5)` and `FULL_VALIDATION=True` for the complete run. Set `FULL_VALIDATION=False` only for a shorter diagnostic run.
 4. Each run receives a unique stamp. Read `FULL_VALIDATION_STATUS.json` and `RUN_COMPLETENESS_MANIFEST.json` before reporting completion. The notebook's inline execution counters alone are not proof of completion, because some saved counters are empty.
-5. Verify the archived result files: `python scripts/verify_release_artifacts.py --results-zip <path-to-results-zip> [--data-zip <path-to-mat-zip>]`.
+5. Verify the archived result files: `python Scripts/verify_release_artifacts.py --results-zip <path-to-results-zip> [--data-zip <path-to-mat-zip>]`.
 
 ## Limitations and responsible interpretation
 
