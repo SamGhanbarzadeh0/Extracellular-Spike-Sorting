@@ -1,0 +1,75 @@
+name: Publish v1.0.0 release (one-time)
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-release-v1.0.0-once.yml'
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Create checked release and remove temporary workflow
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test ! -f .github/workflows/correct-notebook-author-once.yml
+          test -f LICENSE
+          test -f 'Notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb'
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          p=Path('Notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb')
+          b=p.read_bytes()
+          sha=hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
+          assert sha=='f225767055ddc5a6257c6f7384b1b8219f1c8e3d', f'unexpected notebook SHA: {sha}'
+          nb=json.loads(b)
+          assert len(nb['cells'])==47
+          assert 'Sam Ghanbarzadeh' in ''.join(nb['cells'][0]['source'])
+          assert 'Hesam Ghanbarzadeh' not in ''.join(nb['cells'][0]['source'])
+          print('Notebook checks passed')
+          PY
+          cat > /tmp/release_notes.md <<'RELEASE_NOTES'
+# Extracellular Spike Sorting — v1.0.0
+
+**Original academic project:** 2019  
+**Python computational validation:** 22 November 2026  
+**Reference run:** `20261122T060055_422939Z`
+
+This first public release documents extracellular spike detection, waveform feature extraction, and nine clustering procedures evaluated on five simulated, reference-annotated recordings. The repository contains the Jupyter notebook, 45 primary method-recording comparisons, selected figures, result tables, dependency specifications, and verification scripts.
+
+**Reference findings:** The mean matched-event GMM-ICL ARI was **0.9624** across the five simulated recordings. Chronological within-recording held-out micro-F1 was **0.9738** for annotation codes 1–2 and **0.7131** for all three codes, including missed events. These are simulation results, not an external biological validation.
+
+**Historical provenance:** The original academic work dates to 2019. The documented Python benchmark, associated numerical checks, and reference run were created or revised in 2026. The nine-method benchmark should not be represented as an unchanged 2019 execution.
+
+## Release downloads
+
+The following two large archives have **not yet been attached** to this release. They are retained separately pending upload:
+
+- `SpikeSorting_2019_v3_20261122T060055_422939Z_Results.zip` — complete reference output archive (48,319,586 bytes), including 92 generated figures and checkpoints.
+- `Spike_Sorting_2019_Five_MAT_Data.zip` — five MAT simulations (111,874,963 bytes), whose external data rights are distinct from the MIT software license.
+
+The attached `Release_Assets_SHA256SUMS.txt` records the expected SHA-256 digests for both archives; it can be used to verify their integrity once uploaded. GitHub's automatically generated source archives contain repository files, not the separate large result and MAT archives.
+
+**Licensing:** MIT applies to author-owned software and its associated documentation. Laboratory datasets and third-party material retain their respective permissions and attribution requirements. See [README](https://github.com/SamGhanbarzadeh0/Extracellular-Spike-Sorting#readme) for methodology, environment, interpretations, and limitations.
+RELEASE_NOTES
+          cat > /tmp/Release_Assets_SHA256SUMS.txt <<'CHECKSUMS'
+57166309bf7c8c3a16032361cebb4a3af0ba3d1ac98da98ba89c6e31edd6822a  SpikeSorting_2019_v3_20261122T060055_422939Z_Results.zip
+8f547cd38f7652687123a8872b9e48d27946c762d5b26cca9927e9ef588290d9  Spike_Sorting_2019_Five_MAT_Data.zip
+CHECKSUMS
+          if gh release view v1.0.0 >/dev/null 2>&1; then
+            echo 'Release v1.0.0 already exists; refusing to overwrite it' >&2
+            exit 1
+          fi
+          git rm '.github/workflows/publish-release-v1.0.0-once.yml'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: remove temporary v1.0.0 release workflow'
+          git push origin HEAD:main
+          gh release create v1.0.0 /tmp/Release_Assets_SHA256SUMS.txt --title 'v1.0.0 — Extracellular Spike Sorting' --notes-file /tmp/release_notes.md --target "$(git rev-parse HEAD)" --latest
+          gh release view v1.0.0 --json tagName,isDraft,isPrerelease,assets,url --jq '.'
