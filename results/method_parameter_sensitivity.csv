@@ -1,0 +1,71 @@
+dataset,method,parameter,value,k,noise_fraction,k_cap_hit,ari_nonzero_matched
+simulation_1,Fuzzy C-means,fcm_m,1.5,3,0.0,False,0.983050851865998
+simulation_1,Fuzzy C-means,fcm_m,2.0,3,0.0,False,0.966245963214206
+simulation_1,Fuzzy C-means,fcm_m,3.0,2,0.0,False,0.0
+simulation_1,Fuzzy C-means,fcm_m,5.0,3,0.0,False,0.0
+simulation_1,G-means,gmeans_alpha,0.01,3,0.0,False,1.0
+simulation_1,G-means,gmeans_alpha,0.025,3,0.0,False,1.0
+simulation_1,PG-means,pg_n_projections,4.0,2,0.0,False,0.0
+simulation_1,PG-means,pg_n_projections,8.0,2,0.0,False,0.0
+simulation_1,DP-means,lambda_grid_scale,0.8,4,0.0,False,0.7155718734499988
+simulation_1,DP-means,lambda_grid_scale,1.0,3,0.0,False,1.0
+simulation_1,DP-means,lambda_grid_scale,1.25,4,0.0,False,0.7155718734499988
+simulation_1,HDBSCAN,min_cluster_size,20.0,3,0.0,False,1.0
+simulation_1,HDBSCAN,min_cluster_size,35.0,3,0.0,False,1.0
+simulation_1,HDBSCAN,min_cluster_size,50.0,3,0.0,False,1.0
+simulation_2,Fuzzy C-means,fcm_m,1.5,3,0.0,False,1.0
+simulation_2,Fuzzy C-means,fcm_m,2.0,3,0.0,False,1.0
+simulation_2,Fuzzy C-means,fcm_m,3.0,3,0.0,False,1.0
+simulation_2,Fuzzy C-means,fcm_m,5.0,2,0.0,False,0.0
+simulation_2,G-means,gmeans_alpha,0.01,3,0.0,False,1.0
+simulation_2,G-means,gmeans_alpha,0.025,3,0.0,False,1.0
+simulation_2,PG-means,pg_n_projections,4.0,3,0.0,False,1.0
+simulation_2,PG-means,pg_n_projections,8.0,3,0.0,False,1.0
+simulation_2,DP-means,lambda_grid_scale,0.8,4,0.0,False,0.750678257401693
+simulation_2,DP-means,lambda_grid_scale,1.0,4,0.0,False,0.750678257401693
+simulation_2,DP-means,lambda_grid_scale,1.25,7,0.0,False,0.750678257401693
+simulation_2,HDBSCAN,min_cluster_size,20.0,3,0.0004835589941972,False,1.0
+simulation_2,HDBSCAN,min_cluster_size,35.0,3,0.0004835589941972,False,1.0
+simulation_2,HDBSCAN,min_cluster_size,50.0,3,0.0004835589941972,False,1.0
+simulation_3,Fuzzy C-means,fcm_m,1.5,3,0.0,False,0.3662398613665605
+simulation_3,Fuzzy C-means,fcm_m,2.0,3,0.0,False,0.3741968768929179
+simulation_3,Fuzzy C-means,fcm_m,3.0,3,0.0,False,0.4160376814285065
+simulation_3,Fuzzy C-means,fcm_m,5.0,3,0.0,False,0.0154918806166525
+simulation_3,G-means,gmeans_alpha,0.01,3,0.0,False,0.3662381650646583
+simulation_3,G-means,gmeans_alpha,0.025,3,0.0,False,0.3662381650646583
+simulation_3,PG-means,pg_n_projections,4.0,3,0.0,False,0.8715082545983428
+simulation_3,PG-means,pg_n_projections,8.0,3,0.0,False,0.8715082545983428
+simulation_3,DP-means,lambda_grid_scale,0.8,3,0.0,False,0.3684819214242809
+simulation_3,DP-means,lambda_grid_scale,1.0,3,0.0,False,0.3684819214242809
+simulation_3,DP-means,lambda_grid_scale,1.25,3,0.0,False,0.3684819214242809
+simulation_3,HDBSCAN,min_cluster_size,20.0,3,0.0936485859990727,False,0.676354424493951
+simulation_3,HDBSCAN,min_cluster_size,35.0,3,0.0936485859990727,False,0.676354424493951
+simulation_3,HDBSCAN,min_cluster_size,50.0,3,0.0936485859990727,False,0.676354424493951
+simulation_4,Fuzzy C-means,fcm_m,1.5,3,0.0,False,0.9828444367863716
+simulation_4,Fuzzy C-means,fcm_m,2.0,3,0.0,False,0.9866321230429124
+simulation_4,Fuzzy C-means,fcm_m,3.0,3,0.0,False,0.1084180086036798
+simulation_4,Fuzzy C-means,fcm_m,5.0,2,0.0,False,0.0011211460610505
+simulation_4,G-means,gmeans_alpha,0.01,3,0.0,False,0.9904270863931276
+simulation_4,G-means,gmeans_alpha,0.025,3,0.0,False,0.9904270863931276
+simulation_4,PG-means,pg_n_projections,4.0,3,0.0,False,0.9923809639429848
+simulation_4,PG-means,pg_n_projections,8.0,3,0.0,False,0.9923809639429848
+simulation_4,DP-means,lambda_grid_scale,0.8,6,0.0,False,0.496064793897802
+simulation_4,DP-means,lambda_grid_scale,1.0,3,0.0,False,0.9904270863931276
+simulation_4,DP-means,lambda_grid_scale,1.25,5,0.0,False,0.7526131519774352
+simulation_4,HDBSCAN,min_cluster_size,20.0,3,0.1274319066147859,False,0.738830576290964
+simulation_4,HDBSCAN,min_cluster_size,35.0,3,0.1274319066147859,False,0.738830576290964
+simulation_4,HDBSCAN,min_cluster_size,50.0,3,0.1274319066147859,False,0.738830576290964
+simulation_5,Fuzzy C-means,fcm_m,1.5,3,0.0,False,0.7460222659362625
+simulation_5,Fuzzy C-means,fcm_m,2.0,3,0.0,False,0.0231731515117559
+simulation_5,Fuzzy C-means,fcm_m,3.0,2,0.0,False,0.0145311378032809
+simulation_5,Fuzzy C-means,fcm_m,5.0,2,0.0,False,0.0145311378032809
+simulation_5,G-means,gmeans_alpha,0.01,3,0.0,False,1.0
+simulation_5,G-means,gmeans_alpha,0.025,3,0.0,False,1.0
+simulation_5,PG-means,pg_n_projections,4.0,2,0.0,False,0.0
+simulation_5,PG-means,pg_n_projections,8.0,2,0.0,False,0.0
+simulation_5,DP-means,lambda_grid_scale,0.8,4,0.0,False,1.0
+simulation_5,DP-means,lambda_grid_scale,1.0,3,0.0,False,1.0
+simulation_5,DP-means,lambda_grid_scale,1.25,3,0.0,False,1.0
+simulation_5,HDBSCAN,min_cluster_size,20.0,3,0.0220458553791887,False,0.884897227650007
+simulation_5,HDBSCAN,min_cluster_size,35.0,2,0.0008818342151675,False,0.9840628287187184
+simulation_5,HDBSCAN,min_cluster_size,50.0,2,0.0008818342151675,False,0.9840628287187184

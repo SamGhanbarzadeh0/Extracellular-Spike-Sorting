@@ -1,0 +1,6 @@
+dataset,events_detected,train_events,test_events,test_matched,matched_test_nonzero,reference_codes
+simulation_1,1303,912,391,367,68,"[0, 1, 2]"
+simulation_2,2068,1447,621,593,311,"[0, 1, 2]"
+simulation_3,2157,1509,648,628,312,"[0, 1, 2]"
+simulation_4,2056,1439,617,598,317,"[0, 1, 2]"
+simulation_5,1134,793,341,327,38,"[0, 1, 2]"

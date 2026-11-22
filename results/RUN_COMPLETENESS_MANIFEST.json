@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "recordings": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "methods": [
+    "K-means",
+    "Fuzzy C-means",
+    "SOM",
+    "G-means",
+    "GMM-ICL",
+    "X-means",
+    "PG-means",
+    "HDBSCAN",
+    "DP-means"
+  ],
+  "full_validation_completed": true,
+  "seed_count": 10,
+  "software": {
+    "python": "3.13.18",
+    "sklearn": "1.6.1"
+  },
+  "verified_figures": 92,
+  "source_checksums": {
+    "1": "e559eca84bd0fc75b6543997759caa6fb7720357f75f6cce93fdcb08d5be657b",
+    "2": "34c4df15348aa2f3e7b98ce4cccb4cf5a5743d76010f2eaa2de7b6e02c3f396e",
+    "3": "2819b28b8896e7e068c47216a5a9363bd159ac33c184d35595302cf6de0275ad",
+    "4": "ed83503c57400704fde7b8ab158ec5f3c1acac70b9f58a4888c9bf8bce89dad1",
+    "5": "c004968e4278dc821f7b5079088145ceba3637ab7eb573269a37a287ad5e023e"
+  },
+  "mandatory_files": [
+    "comparison.csv",
+    "same_K_control.csv",
+    "failure_flags.csv",
+    "FEATURE_CONFIG_COMPARISON/GMM_ICL_FEATURE_CONFIG_HOLDOUT.csv",
+    "END_TO_END_HELDOUT_BY_RECORDING.csv",
+    "END_TO_END_HELDOUT_MICRO_SUMMARY.csv",
+    "END_TO_END_PROTOCOL.json",
+    "FIGURE_GALLERY.html",
+    "pca_dimension_ablation.csv",
+    "identifiability_positive_control.csv",
+    "threshold_tradeoff_fixed_K.csv",
+    "secondary_5p5_sigma_nine_methods.csv",
+    "feature_extraction_heldout_ablation.csv"
+  ]
+}

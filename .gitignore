@@ -1,0 +1,14 @@
+# Large/raw source data and archived execution bundles live in GitHub Releases, not Git history.
+*.mat
+*.zip
+*.npz
+*.bin
+# Cache and local outputs
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+*.egg-info/
+_full_validation_checkpoints/
+SpikeSorting_2019_v3_*/

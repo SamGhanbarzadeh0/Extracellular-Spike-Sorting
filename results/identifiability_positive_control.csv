@@ -1,0 +1,6 @@
+dataset,train_matched,test_matched,class_codes,conditional_reference_balanced_accuracy,conditional_reference_ari,conditional_reference_macro_f1,detected_total,annotated_total,annotated_recovered,annotated_event_recovery_fraction,code_nonzero_recovery_fraction,biological_label0_identity,positive_control_type
+simulation_1,853,366,"0,1,2",1.0,1.0,1.0,1303,2415,1219,0.5047619047619047,1.0,UNVERIFIED,"SUPERVISED linear, chronological 70/30; diagnosis only"
+simulation_2,1379,591,"0,1,2",1.0,1.0,1.0,2068,3214,1970,0.6129433727442439,1.0,UNVERIFIED,"SUPERVISED linear, chronological 70/30; diagnosis only"
+simulation_3,1462,627,"0,1,2",0.9513518938258491,0.8778344982671403,0.9497087848401152,2157,3283,2089,0.6363082546451416,0.9954044117647058,UNVERIFIED,"SUPERVISED linear, chronological 70/30; diagnosis only"
+simulation_4,1392,597,"0,1,2",0.9724353820834644,0.9130921697389758,0.9714444975314541,2056,3193,1989,0.6229251487629189,0.9990476190476191,UNVERIFIED,"SUPERVISED linear, chronological 70/30; diagnosis only"
+simulation_5,742,319,"0,1,2",1.0,1.0,1.0,1134,2328,1061,0.45575601374570446,1.0,UNVERIFIED,"SUPERVISED linear, chronological 70/30; diagnosis only"

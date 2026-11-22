@@ -1,0 +1,46 @@
+dataset,method,k,ari_annotated_all,ari_nonzero_matched,noise_frac,k_cap_hit,conditional_reference_balanced_accuracy,conditional_reference_ari,annotated_event_recovery_fraction,conditional_score_warning
+simulation_1,K-means,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,Fuzzy C-means,3,0.9992854277843761,0.983050851865998,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,SOM,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,G-means,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,GMM-ICL,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,X-means,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,PG-means,2,0.9535253374105295,0.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,HDBSCAN,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_1,DP-means,3,1.0,1.0,0.0,False,1.0,1.0,0.5047619047619047,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,K-means,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,Fuzzy C-means,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,SOM,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,G-means,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,GMM-ICL,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,X-means,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,PG-means,3,1.0,1.0,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,HDBSCAN,3,1.0,1.0,0.00048355899419729207,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_2,DP-means,4,0.9200809047473945,0.750678257401693,0.0,False,1.0,1.0,0.6129433727442439,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,K-means,3,0.6874324897009954,0.37073130429782236,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,Fuzzy C-means,3,0.6813744625743676,0.3640038776777663,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,SOM,3,0.6856919267555853,0.36743856579425443,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,G-means,3,0.6858635514671098,0.36623816506465834,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,GMM-ICL,3,0.8995032249196324,0.8715082545983428,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,X-means,4,0.6861680749950618,0.3701080115666002,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,PG-means,3,0.8995032249196324,0.8715082545983428,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,HDBSCAN,3,0.7862501093057774,0.676354424493951,0.09364858599907279,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_3,DP-means,3,0.6868198992360166,0.36848192142428093,0.0,False,0.9513518938258491,0.8778344982671403,0.6363082546451416,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,K-means,3,0.9015547607334164,0.9904270863931276,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,Fuzzy C-means,3,0.8883829384982244,0.9866321230429123,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,SOM,3,0.9015547607334164,0.9904270863931276,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,G-means,3,0.9030434966326587,0.9904270863931276,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,GMM-ICL,3,0.9181080570487997,0.9923809639429849,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,X-means,4,0.8245710214155512,0.7543451492436365,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,PG-means,3,0.9181080570487997,0.9923809639429849,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,HDBSCAN,3,0.76389645596219,0.738830576290964,0.12743190661478598,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_4,DP-means,3,0.9015547607334164,0.9904270863931276,0.0,False,0.9724353820834644,0.9130921697389758,0.6229251487629189,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,K-means,3,0.9890802390632432,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,Fuzzy C-means,3,0.9419232475646623,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,SOM,3,0.9890802390632432,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,G-means,3,0.9890802390632432,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,GMM-ICL,3,0.9945191712377438,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,X-means,3,0.9890802390632432,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,PG-means,2,0.9749745692803331,0.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,HDBSCAN,3,0.9108689690229473,0.884897227650007,0.02204585537918871,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.
+simulation_5,DP-means,3,0.9890802390632432,1.0,0.0,False,1.0,1.0,0.45575601374570446,Positive-control and unsupervised scores use different test sets and targets.

@@ -1,0 +1,11 @@
+# Recorded reference environment: Python 3.13.18 (install separately).
+# Versions below are recorded in the 2026-11-22 execution manifest.
+numpy==2.4.6
+scipy==1.16.3
+pandas==2.2.3
+scikit-learn==1.6.1
+
+# Needed by the notebook, but exact versions were not archived.
+matplotlib>=3.6,<4
+nbformat>=5.8,<6
+ipython>=8

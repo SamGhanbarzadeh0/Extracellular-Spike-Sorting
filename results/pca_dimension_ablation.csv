@@ -1,0 +1,26 @@
+dataset,n_pcs,K_diagnostic,reference_ARI_all_matched,reference_ARI_nonzero_matched,n_matched,n_nonzero_matched,use
+simulation_1,2,3,0.9933251616023409,1.0,1219,236,EXPLORATORY ONLY; not chosen by label scores
+simulation_1,3,3,0.9966824389750741,1.0,1219,236,EXPLORATORY ONLY; not chosen by label scores
+simulation_1,5,3,0.9966824389750741,1.0,1219,236,EXPLORATORY ONLY; not chosen by label scores
+simulation_1,8,3,0.3689421775823103,0.0,1219,236,EXPLORATORY ONLY; not chosen by label scores
+simulation_1,10,3,0.9966824389750741,1.0,1219,236,EXPLORATORY ONLY; not chosen by label scores
+simulation_2,2,3,1.0,1.0,1970,1058,EXPLORATORY ONLY; not chosen by label scores
+simulation_2,3,3,1.0,1.0,1970,1058,EXPLORATORY ONLY; not chosen by label scores
+simulation_2,5,3,1.0,1.0,1970,1058,EXPLORATORY ONLY; not chosen by label scores
+simulation_2,8,3,1.0,1.0,1970,1058,EXPLORATORY ONLY; not chosen by label scores
+simulation_2,10,3,1.0,1.0,1970,1058,EXPLORATORY ONLY; not chosen by label scores
+simulation_3,2,3,0.2628118631241303,0.1394928511732922,2089,1083,EXPLORATORY ONLY; not chosen by label scores
+simulation_3,3,3,0.3875729930715241,0.3602722500388852,2089,1083,EXPLORATORY ONLY; not chosen by label scores
+simulation_3,5,3,0.3873871401980517,0.3238031524635508,2089,1083,EXPLORATORY ONLY; not chosen by label scores
+simulation_3,8,3,0.559520626077861,0.5157009512250789,2089,1083,EXPLORATORY ONLY; not chosen by label scores
+simulation_3,10,3,0.5685346271041408,0.5814056752094527,2089,1083,EXPLORATORY ONLY; not chosen by label scores
+simulation_4,2,3,0.6620997820268383,0.976073131980548,1989,1049,EXPLORATORY ONLY; not chosen by label scores
+simulation_4,3,3,0.6965450051962655,0.9773539048414621,1989,1049,EXPLORATORY ONLY; not chosen by label scores
+simulation_4,5,3,0.7034480447910988,0.9830918398186863,1989,1049,EXPLORATORY ONLY; not chosen by label scores
+simulation_4,8,3,0.7549823980830548,0.9774994455215928,1989,1049,EXPLORATORY ONLY; not chosen by label scores
+simulation_4,10,3,0.7813723292178204,0.9811306798956955,1989,1049,EXPLORATORY ONLY; not chosen by label scores
+simulation_5,2,3,0.32084006830935247,1.0,1061,118,EXPLORATORY ONLY; not chosen by label scores
+simulation_5,3,3,0.26797418190019,-0.0020314722901293115,1061,118,EXPLORATORY ONLY; not chosen by label scores
+simulation_5,5,3,0.2754948947976658,0.0,1061,118,EXPLORATORY ONLY; not chosen by label scores
+simulation_5,8,3,0.2715560158872187,-0.0027020953259961804,1061,118,EXPLORATORY ONLY; not chosen by label scores
+simulation_5,10,3,0.27015500117563224,-0.0027020953259961804,1061,118,EXPLORATORY ONLY; not chosen by label scores

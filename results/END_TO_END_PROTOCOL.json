@@ -1,0 +1,165 @@
+{
+  "version": "2019",
+  "training_fraction": 0.7,
+  "unit_threshold_sigma": 4.0,
+  "auxiliary_threshold_sigma": 3.5,
+  "selected_model": "GMM-ICL fitted on training high-threshold spikes",
+  "class_mapping": "Hungarian relabeling using training annotations for evaluation only",
+  "model_selection": "ICL on chronological training waveforms only; no reference labels",
+  "heldout": "final 30% of recording by time, plus 36-sample boundary guard",
+  "event_matching": "one-to-one onset-to-peak using predeclared 12-36 sample window",
+  "auxiliary_assumption": "extra low-amplitude candidates are unresolved/code-0 proxies; not identified as a neuron",
+  "scientific_status": "exploratory analysis on previously inspected 5 simulations; no independent biological validation",
+  "recordings": [
+    {
+      "dataset": "simulation_1",
+      "n_high_detected": 1303,
+      "n_extra_unresolved": 656,
+      "training_n_spikes": 903,
+      "selected_k": 3,
+      "label_map_evaluation_only": {
+        "2": 0,
+        "0": 1,
+        "1": 2
+      },
+      "training_contingency": [
+        [
+          0,
+          0,
+          678
+        ],
+        [
+          96,
+          0,
+          0
+        ],
+        [
+          0,
+          70,
+          0
+        ]
+      ],
+      "sha256": "e559eca84bd0fc75b6543997759caa6fb7720357f75f6cce93fdcb08d5be657b"
+    },
+    {
+      "dataset": "simulation_2",
+      "n_high_detected": 2068,
+      "n_extra_unresolved": 592,
+      "training_n_spikes": 1454,
+      "selected_k": 3,
+      "label_map_evaluation_only": {
+        "0": 0,
+        "2": 1,
+        "1": 2
+      },
+      "training_contingency": [
+        [
+          633,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          377
+        ],
+        [
+          0,
+          373,
+          0
+        ]
+      ],
+      "sha256": "34c4df15348aa2f3e7b98ce4cccb4cf5a5743d76010f2eaa2de7b6e02c3f396e"
+    },
+    {
+      "dataset": "simulation_3",
+      "n_high_detected": 2157,
+      "n_extra_unresolved": 574,
+      "training_n_spikes": 1519,
+      "selected_k": 3,
+      "label_map_evaluation_only": {
+        "0": 0,
+        "2": 1,
+        "1": 2
+      },
+      "training_contingency": [
+        [
+          672,
+          18,
+          6
+        ],
+        [
+          0,
+          14,
+          386
+        ],
+        [
+          2,
+          363,
+          10
+        ]
+      ],
+      "sha256": "2819b28b8896e7e068c47216a5a9363bd159ac33c184d35595302cf6de0275ad"
+    },
+    {
+      "dataset": "simulation_4",
+      "n_high_detected": 2056,
+      "n_extra_unresolved": 610,
+      "training_n_spikes": 1444,
+      "selected_k": 3,
+      "label_map_evaluation_only": {
+        "0": 0,
+        "2": 1,
+        "1": 2
+      },
+      "training_contingency": [
+        [
+          631,
+          5,
+          23
+        ],
+        [
+          2,
+          1,
+          352
+        ],
+        [
+          1,
+          380,
+          0
+        ]
+      ],
+      "sha256": "ed83503c57400704fde7b8ab158ec5f3c1acac70b9f58a4888c9bf8bce89dad1"
+    },
+    {
+      "dataset": "simulation_5",
+      "n_high_detected": 1134,
+      "n_extra_unresolved": 586,
+      "training_n_spikes": 804,
+      "selected_k": 3,
+      "label_map_evaluation_only": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "training_contingency": [
+        [
+          660,
+          1,
+          0
+        ],
+        [
+          0,
+          43,
+          0
+        ],
+        [
+          0,
+          0,
+          39
+        ]
+      ],
+      "sha256": "c004968e4278dc821f7b5079088145ceba3637ab7eb573269a37a287ad5e023e"
+    }
+  ]
+}

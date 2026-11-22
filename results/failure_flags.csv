@@ -1,0 +1,46 @@
+dataset,method,flags
+simulation_1,K-means,NONE
+simulation_1,Fuzzy C-means,NONE
+simulation_1,SOM,NONE
+simulation_1,G-means,NONE
+simulation_1,GMM-ICL,NONE
+simulation_1,X-means,NONE
+simulation_1,PG-means,LOW_NONZERO_REFERENCE_AGREEMENT
+simulation_1,HDBSCAN,NONE
+simulation_1,DP-means,NONE
+simulation_2,K-means,NONE
+simulation_2,Fuzzy C-means,NONE
+simulation_2,SOM,NONE
+simulation_2,G-means,NONE
+simulation_2,GMM-ICL,NONE
+simulation_2,X-means,NONE
+simulation_2,PG-means,NONE
+simulation_2,HDBSCAN,NONE
+simulation_2,DP-means,NONE
+simulation_3,K-means,NONE
+simulation_3,Fuzzy C-means,NONE
+simulation_3,SOM,NONE
+simulation_3,G-means,NONE
+simulation_3,GMM-ICL,NONE
+simulation_3,X-means,NONE
+simulation_3,PG-means,INITIALIZATION_SENSITIVE
+simulation_3,HDBSCAN,NONE
+simulation_3,DP-means,NONE
+simulation_4,K-means,NONE
+simulation_4,Fuzzy C-means,NONE
+simulation_4,SOM,NONE
+simulation_4,G-means,NONE
+simulation_4,GMM-ICL,NONE
+simulation_4,X-means,NONE
+simulation_4,PG-means,NONE
+simulation_4,HDBSCAN,NONE
+simulation_4,DP-means,NONE
+simulation_5,K-means,NONE
+simulation_5,Fuzzy C-means,NONE
+simulation_5,SOM,INITIALIZATION_SENSITIVE
+simulation_5,G-means,NONE
+simulation_5,GMM-ICL,NONE
+simulation_5,X-means,NONE
+simulation_5,PG-means,LOW_NONZERO_REFERENCE_AGREEMENT
+simulation_5,HDBSCAN,NONE
+simulation_5,DP-means,INITIALIZATION_SENSITIVE
