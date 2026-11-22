@@ -73,4 +73,4 @@ An earlier **scikit-learn 1.8.0** rerun agreed exactly on 43/45 primary ARI rows
 
 **Code license:** To be selected by the repository owner. Permission to publish laboratory data does not by itself establish a general third-party reuse license.
 
-**Research identifier:** [Hesam Ghanbarzadeh — ORCID 0000-0003-4040-1098](https://orcid.org/0000-0003-4040-1098).
+**Research identifier:** [Sam Ghanbarzadeh — ORCID 0000-0003-4040-1098](https://orcid.org/0000-0003-4040-1098).
