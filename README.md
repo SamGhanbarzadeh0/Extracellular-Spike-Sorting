@@ -24,6 +24,20 @@ The event-level results use a chronological 70/30 train/test split **within each
 
 *Simulation 3 is an important challenging case; its performance is lower for several methods than for the easiest simulations. Results from all five are retained.*
 
+### Additional visual comparisons
+
+![End-to-end F1 on the chronological holdout](Figures/END_TO_END_TWO_TIER_COMPARISON.png)
+
+*End-to-end held-out F1 is shown separately for codes 1–2 and for all three annotation categories. The two panels have different evaluation scopes.*
+
+![Wavelet feature-configuration comparison](Figures/Feature%20Config%20Comparison/THREE_FEATURE_CONFIG_COMPARISON.png)
+
+*Three wavelet feature representations are compared using matched-event ARI and model-order stability across the five simulations.*
+
+![Identifiability and event-recovery audit](Figures/identifiability_audit.png)
+
+*The linear-separability positive control is compared with annotation match fractions, distinguishing cluster separability from event recovery.*
+
 ## Validated reference execution
 
 A complete `FULL_VALIDATION=True` run on **22 November 2026** produced the archive `SpikeSorting_2019_v3_20261122T060055_422939Z_Results.zip` (48,319,586 bytes).
