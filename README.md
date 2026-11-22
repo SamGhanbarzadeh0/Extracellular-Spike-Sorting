@@ -40,7 +40,7 @@ An earlier **scikit-learn 1.8.0** rerun agreed exactly on 43/45 primary ARI rows
 
 ## Files and download locations
 
-- `notebooks/01_spike_sorting_v3_validation.ipynb` — complete analysis notebook with its saved figures and numerical results.
+- `notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb` — complete analysis notebook with its saved figures and numerical results.
 - `results/` — CSV tables and key machine-readable manifests.
 - `figures/` — eight selected figures. The complete figure gallery and checkpoint files remain in the full ZIP archive.
 - `data/SHA256SUMS.txt` — checksums for the five source MAT files; data are distributed separately from Git history.
