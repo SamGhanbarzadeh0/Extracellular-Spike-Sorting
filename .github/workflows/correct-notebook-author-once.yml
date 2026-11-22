@@ -1,0 +1,46 @@
+name: One-time correction of notebook author
+on:
+  push:
+    paths:
+      - '.github/workflows/correct-notebook-author-once.yml'
+permissions:
+  contents: write
+jobs:
+  correct-author:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Correct author without changing scientific content
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          path = Path("Notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb")
+          before = path.read_bytes()
+          def git_blob_sha(content):
+              return hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
+          assert git_blob_sha(before) == "95a4c4283f2d540ead7b8bd3c9f96dfe468bb1c2", "Unexpected source notebook"
+          old = b"**Hesam Ghanbarzadeh | Computational Neuroscience**"
+          new = b"**Sam Ghanbarzadeh | Computational Neuroscience**"
+          assert before.count(old) == 1, "Expected exactly one outdated author reference"
+          after = before.replace(old, new)
+          a, b = json.loads(before), json.loads(after)
+          assert len(a["cells"]) == len(b["cells"]) == 47
+          assert a["cells"][0]["cell_type"] == "markdown"
+          assert a["cells"][0]["source"] != b["cells"][0]["source"]
+          b["cells"][0]["source"] = a["cells"][0]["source"]
+          assert a == b, "Unexpected change outside the first Markdown cell"
+          path.write_bytes(after)
+          print("Author corrected; other cells and all outputs preserved.")
+          print("New SHA256:", hashlib.sha256(after).hexdigest())
+          PY
+          rm .github/workflows/correct-notebook-author-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "Notebooks/01- Spike Sorting 2019 v3 - Final Figures and Validation.ipynb" .github/workflows/correct-notebook-author-once.yml
+          git commit -m "docs: correct notebook author name to Sam"
+          git push origin HEAD:main
