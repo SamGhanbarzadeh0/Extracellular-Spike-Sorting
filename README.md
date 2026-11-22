@@ -85,6 +85,6 @@ An earlier **scikit-learn 1.8.0** rerun agreed exactly on 43/45 primary ARI rows
 - Selected model-order and clustering procedures are adapted variants and should be cited by their actual implemented rules.
 - Results are a numerical comparison on simulations, **not validation of biological single-unit isolation** or evidence of generalization to human/animal recordings.
 
-**Code license:** To be selected by the repository owner. Permission to publish laboratory data does not by itself establish a general third-party reuse license.
+**Code license:** MIT (see [LICENSE](LICENSE)) for author-owned software and associated documentation. Laboratory-provided datasets and third-party material retain their respective usage terms; the MIT license does not grant rights to those external materials.
 
 **Research identifier:** [Sam Ghanbarzadeh — ORCID 0000-0003-4040-1098](https://orcid.org/0000-0003-4040-1098).
